@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'OutfitFont';
+  src: url('../../public/fonts/Outfit/static/Outfit-Medium.ttf') format('truetype'),
+}
+
+:root {
+  --primary-color: rgba(47, 131, 228, 1);
+  --text-primary-color: #757575;
+  --white-color: rgb(255, 255, 255);
+  --btn-primary: rgba(34, 80, 142, 1);
+
+  font-family: '';
+}
+
+
+body {
+  font-family: 'OutfitFont', sans-serif !important;
+}
+
+
+/* Input Field CSS Start  */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Input Field CSS End  */
+
+h1 {
+  font-family: 'OutfitFont', sans-serif !important;
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+  line-height: 1 !important;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2vw, 1.85rem) !important;
+  line-height: 1.06 !important;
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+}
+
+/* Select Field */
+select option {
+  background-color: white;
+  line-height: 100px;
+  color: var(--primary-color);
+}
+
+.optionTrade {
+  padding: 200px !important;
+}
+
+@media only screen and (max-width: 375px) {
+  .chat-height {
+    height: 50vh !important;
+  }
+}
